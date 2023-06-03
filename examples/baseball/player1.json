@@ -1,0 +1,10 @@
+{
+  "player": {
+    "name": "Willy Jackson",
+    "age": 26,
+    "team": "Atlanta Grandes",
+    "position": "1B"
+  },
+  "hits": 24,
+  "ab": 58
+}

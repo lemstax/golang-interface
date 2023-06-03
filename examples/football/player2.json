@@ -1,0 +1,10 @@
+{
+  "type": "players.FootballPlayer",
+  "player": {
+    "name": "Ron Bishop",
+    "age": 34,
+    "team": "Florida Washingtons",
+    "position": "RB"
+  },
+  "touchdowns": 12
+}

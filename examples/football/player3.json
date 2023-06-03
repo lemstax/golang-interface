@@ -1,0 +1,10 @@
+{
+  "type": "players.FootballPlayer",
+  "player": {
+    "name": "Bill Wallace",
+    "age": 23,
+    "team": "Jamestown Pillagers",
+    "position": "DT"
+  },
+  "touchdowns": 0
+}

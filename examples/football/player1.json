@@ -1,0 +1,10 @@
+{
+  "type": "players.FootballPlayer",
+  "player": {
+    "name": "Bob Johnson",
+    "age": 30,
+    "team": "Florida Washingtons",
+    "position": "WR"
+  },
+  "touchdowns": 100
+}

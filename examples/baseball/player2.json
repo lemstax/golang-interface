@@ -1,0 +1,10 @@
+{
+  "player": {
+    "name": "Sam Jefferson",
+    "age": 26,
+    "team": "Seattle Starbucks",
+    "position": "2B"
+  },
+  "hits": 15,
+  "ab": 64
+}
