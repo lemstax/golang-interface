@@ -2,7 +2,8 @@ package baseball
 
 import (
 	"fmt"
-	log "github.com/apex/log"
+	"github.com/apex/log"
+	"time"
 	"type-registry/players"
 )
 
@@ -24,8 +25,11 @@ func (p *Player) PlayerToString() string {
 func (p *Player) Score() {
 	log.Infof("The %s is at the plate.", p.Player.Position)
 	log.Infof("%s swings and gets a hit!", p.Player.Name)
+	time.Sleep(1000)
 	log.Infof("He's rounding first and headed over to second.")
+	time.Sleep(1000)
 	log.Infof("SAFE AT SECOND and headed to third.")
 	log.Infof("Throw gets by the 3rd Baseman and he's headed home!")
+	time.Sleep(1000)
 	log.Infof("%s SCORES!", p.Player.Name)
 }

@@ -2,20 +2,22 @@ package main
 
 import (
 	"github.com/apex/log"
+	"type-registry/players"
 	"type-registry/players/factory"
 )
 
+var ballTypes = []string{"baseball", "football"}
+
 func main() {
-	ballPlayers, err := factory.UnmarshalBallPlayer("baseball", "./examples")
-	if err != nil {
-		panic(err)
-	}
-	fballPlayers, err := factory.UnmarshalBallPlayer("football", "./examples")
-	if err != nil {
-		panic(err)
-	}
-	for _, player := range fballPlayers {
-		ballPlayers = append(ballPlayers, player)
+	var ballPlayers []players.Player
+	for _, ballType := range ballTypes {
+		bp, err := factory.UnmarshalBallPlayer(ballType, "./examples")
+		if err != nil {
+			panic(err)
+		}
+		for _, player := range bp {
+			ballPlayers = append(ballPlayers, player)
+		}
 	}
 
 	for _, player := range ballPlayers {
