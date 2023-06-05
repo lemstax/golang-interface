@@ -15,9 +15,7 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-		for _, player := range bp {
-			ballPlayers = append(ballPlayers, player)
-		}
+		ballPlayers = append(ballPlayers, bp...)
 	}
 
 	for _, player := range ballPlayers {
